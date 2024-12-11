@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.viacostafx.Controller.BusPiso1Controller">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;">
+         <children>
+            <Pane id="Pane" layoutX="79.0" layoutY="782.0" prefHeight="159.0" prefWidth="689.0" style="-fx-border-radius: 10px; -fx-border-width: 3px; -fx-border-color: black;">
+               <children>
+                  <Text layoutX="37.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Servicios:">
+                     <font>
+                        <Font name="Arial" size="22.0" />
+                     </font>
+                  </Text>
+                  <TextArea fx:id="txtServicios" editable="false" layoutX="151.0" layoutY="78.0" prefHeight="64.0" prefWidth="288.0" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextArea>
+                  <Button fx:id="btnRegistrar" layoutX="490.0" layoutY="85.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="149.0" style="-fx-background-color: #07168f;" text="Registrar" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="37.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asiento:">
+                     <font>
+                        <Font name="Arial" size="22.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtAsientoPasajero" editable="false" layoutX="151.0" layoutY="24.0" prefHeight="29.0" prefWidth="149.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="367.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio:">
+                     <font>
+                        <Font name="Arial" size="22.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtPrecioAsiento" editable="false" layoutX="487.0" layoutY="23.0" prefHeight="30.0" prefWidth="149.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane id="Pane" layoutX="79.0" layoutY="712.0" prefHeight="64.0" prefWidth="689.0" style="-fx-border-radius: 10px; -fx-border-width: 3px; -fx-border-color: black;">
+               <children>
+                  <Text layoutX="368.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+                     <font>
+                        <Font name="Arial" size="22.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtEmail" layoutX="490.0" layoutY="17.0" prefHeight="30.0" prefWidth="149.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="38.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono:">
+                     <font>
+                        <Font name="Arial" size="22.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtTelefono" layoutX="153.0" layoutY="17.0" prefHeight="30.0" prefWidth="149.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Text fill="#177ce3" layoutX="725.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccion de Asiento" wrappingWidth="470.830078125">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Text>
+            <Pane id="Pane" layoutX="79.0" layoutY="592.0" prefHeight="113.0" prefWidth="689.0" style="-fx-border-width: 3px; -fx-border-color: black; -fx-border-radius: 10px;">
+               <children>
+                  <Text fill="RED" layoutX="42.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Nombre:">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Text>
+                  <Text fill="RED" layoutX="41.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*DNI:">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtDNI" layoutX="155.0" layoutY="16.0" prefHeight="30.0" prefWidth="149.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtNombre" layoutX="155.0" layoutY="69.0" prefHeight="30.0" prefWidth="149.0">
+                     <font>
+                        <Font name="Arial Narrow" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Text fill="RED" layoutX="366.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Apellido:">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtApellido" layoutX="488.0" layoutY="69.0" prefHeight="30.0" prefWidth="149.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnBuscar" graphicTextGap="10.0" layoutX="359.0" layoutY="15.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="105.0" style="-fx-background-color: #07168f;" text="Buscar" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/pngwing.com.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Button fx:id="btnSiguiente" layoutX="1706.0" layoutY="954.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="124.0" style="-fx-background-color: #525FE1;" text="Siguiente" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAtras" layoutX="79.0" layoutY="954.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="124.0" style="-fx-background-color: #525FE1;" text="Atras" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="85.0" layoutY="204.0" prefHeight="346.0" prefWidth="1750.0">
+               <children>
+                  <GridPane id="gridPane" fx:id="gridAsientos" layoutY="-51.0" prefHeight="385.0" prefWidth="1750.0" stylesheets="@../css/styles.css">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="175.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="173.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="83.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tblPasajeros" layoutX="806.0" layoutY="608.0" prefHeight="322.0" prefWidth="1024.0">
+               <columns>
+                  <TableColumn fx:id="colNombre" prefWidth="155.0" text="Nombre" />
+                  <TableColumn fx:id="colDNI" prefWidth="193.0" text="DNI" />
+                  <TableColumn fx:id="colTelefono" prefWidth="106.0" text="Telefono" />
+                  <TableColumn fx:id="colEmail" prefWidth="168.0" text="Email" />
+                  <TableColumn fx:id="colAsiento" prefWidth="116.0" text="Asiento" />
+                  <TableColumn fx:id="colPrecio" prefWidth="132.0" text="Precio" />
+                  <TableColumn fx:id="colAcciones" prefWidth="132.0" text="Acciones" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
